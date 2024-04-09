@@ -1,0 +1,25 @@
+{
+  "name": "remotepn",
+  "version": "1.0.4",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-cli": "esbuild cli.ts --bundle --outfile=./dist/cli.js --platform=node --target=es2020 --external:node-fetch",
+    "build": "npm run build-cli && npm run build-lib",
+    "build-lib": "esbuild index.ts --bundle --outfile=./dist/index.js --sourcemap --platform=node --target=es2020 --external:node-fetch"
+  },
+  "bin": {
+    "remotepn": "./dist/cli.js"
+  },
+  "exports": {
+    "default": "./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node-fetch": "^2.6.11",
+    "esbuild": "0.20.2",
+    "ts-node": "^10.9.2"
+  }
+}
