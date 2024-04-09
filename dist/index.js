@@ -110,6 +110,8 @@ var RemotePN = class {
   }) {
     __publicField(this, "telegramToken");
     __publicField(this, "telegramUser");
+    this.telegramToken = telegramToken;
+    this.telegramUser = telegramUser;
   }
   async prompt(message) {
     const { messageId } = await sendMessage(

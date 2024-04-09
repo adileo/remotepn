@@ -10,7 +10,10 @@ export default class RemotePN {
   }: {
     telegramToken: string;
     telegramUser: string;
-  }) {}
+  }) {
+    this.telegramToken = telegramToken;
+    this.telegramUser = telegramUser;
+  }
   async prompt(message: string) {
     const { messageId } = await sendMessage(
       this.telegramToken,
