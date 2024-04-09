@@ -1,6 +1,6 @@
 {
   "name": "remotepn",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "default": "./dist/index.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node-fetch": "^2.6.11",
     "esbuild": "0.20.2",
