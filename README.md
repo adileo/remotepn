@@ -24,6 +24,10 @@ Output: Message answer string or "Y"/"N" in case of thumbs-up or thumbs-down rea
 
 ## Javascript / Typescript
 
+```bash
+npm i remotepn
+```
+
 ```typescript
 import RemotePN from "remotepn";
 const client = new RemotePN({
