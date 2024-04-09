@@ -38,6 +38,6 @@ const answer = await client.prompt("Hello World");
 console.log(answer); // Message answer string or "Y"/"N" in case of thumbs-up or thumbs-down reaction.
 ```
 
-## Answering
+## Answering the prompt
 
-You have to specifically answer the message, not just sending a message to the bot as an answer. Or you can use thumbs-up or thumbs-down reaction.
+You must reply directly to the message, rather than simply sending a message to the bot. Alternatively, you can use the thumbs-up or thumbs-down reaction.
